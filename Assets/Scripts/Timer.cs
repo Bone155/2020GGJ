@@ -7,11 +7,13 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     public float timer;
+    public GameObject playerReference;
+    Movement move;
     public Text text;
     // Start is called before the first frame update
     void Start()
     {
-
+        move = playerReference.GetComponent<Movement>();
     }
 
     // Update is called once per frame
@@ -22,7 +24,8 @@ public class Timer : MonoBehaviour
         if(timer <= 0)
         {
             text.text = "0";
-            SceneManager.LoadScene("Main");
+            move.speed = 0;
+            //SceneManager.LoadScene("Main");
         }
     }
 }
