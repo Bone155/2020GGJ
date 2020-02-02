@@ -53,12 +53,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\artSelection.cs" />
      <Compile Include="Assets\Scripts\BodyParts.cs" />
      <Compile Include="Assets\Scripts\ButtonPushing.cs" />
      <Compile Include="Assets\Scripts\CenterParts.cs" />
      <Compile Include="Assets\Scripts\CreditScript.cs" />
      <Compile Include="Assets\Scripts\enterEast.cs" />
      <Compile Include="Assets\Scripts\enterWest.cs" />
+     <Compile Include="Assets\Scripts\InstructScript.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
