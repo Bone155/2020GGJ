@@ -21,7 +21,8 @@ public class Timer : MonoBehaviour
         timer -= Time.deltaTime;
         if(timer <= 0)
         {
-            SceneManager.LoadScene("NightManagerv1Grey");
+            text.text = "0";
+            SceneManager.LoadScene("Main");
         }
     }
 }
